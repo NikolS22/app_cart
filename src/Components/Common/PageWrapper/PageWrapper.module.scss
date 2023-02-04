@@ -1,0 +1,14 @@
+
+.page_wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flexContent{
+    flex: 1 0 auto;
+}
+
+.flexFooter{
+    flex: 0 0 auto;
+}

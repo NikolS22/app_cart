@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { routes } from 'Helpers/Constants/routes';
+import { Main } from './Containers/Main';
+import { Cataloge } from 'Containers/Cataloge';
+import { Cart } from 'Containers/Cart';
+import { Auth } from 'Containers/Auth';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path={routes.main} element={<Main />} />
+        <Route path={routes.cart} element={<Cart />} />
+        <Route path={routes.cataloge} element={<Cataloge />} />
+        <Route path={routes.auth} element={<Auth />} />
+    </Routes>
   );
 }
 
