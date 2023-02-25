@@ -1,0 +1,37 @@
+.text{
+    color: rgb(104, 59, 128);
+    text-align: center;
+}
+
+.text_min{
+    color: rgb(56, 50, 59);
+    text-align: center;
+    font-weight: 350;
+    font-style: italic;
+}
+
+.buttonStyle{
+    text-align: center;
+    align-items: center;
+    width: 40vw;
+    
+    border-radius: 20px;
+    padding: 10px 30px;
+
+    color: rgb(104, 59, 128);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    border: 2px solid rgb(104, 59, 128, 0.3);
+    margin: 10px auto;
+  }
+  .buttonStyle a{
+    text-decoration: none;
+  }
+  .buttonStyle:hover {
+    background-color: rgb(104, 59, 128);
+    color: white;
+}
+.buttonStyle:hover a{
+    color: white;
+}

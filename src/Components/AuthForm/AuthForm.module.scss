@@ -4,6 +4,10 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    border: solid 2px rgb(104, 59, 128);
+    border-radius: 12px;
+    margin: 5% 15%;
+    padding-bottom: 2%;
   
     .input_group {
       display: flex;
@@ -17,3 +21,32 @@
       font-size: 25px;
     }
   }
+
+  .buttonInput{
+    display: flex;
+    background-color: rgb(64, 211, 0);
+    border: 2px solid rgb(64, 211, 0);
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin: 5px 10px 5px 20px;
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.3);
+    color: white;
+    padding: auto;
+  }
+
+  .buttonReg a{
+      text-decoration: none;
+      color: rgb(104, 59, 128);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      margin: 5px 10px 5px 20px;
+      padding: 10px 40px;
+      border-radius: 20px;
+      border: 2px solid rgb(104, 59, 128);
+  }
+ .buttonGroop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }

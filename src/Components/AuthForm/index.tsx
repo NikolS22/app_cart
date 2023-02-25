@@ -1,5 +1,7 @@
 import { Input } from 'Components/Common/Input';
+import { routes } from 'Helpers/Constants/routes';
 import React, { ChangeEvent, useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 import style from './AuthForm.module.scss';
 
 export const AuthForm = () => {
@@ -35,11 +37,11 @@ export const AuthForm = () => {
 
   return (
     <div className={style.wrapper}>
-      <h1>AUTH FORM</h1>
+      <h1>Авторизация</h1>
       <div className={style.input_group}>
-        <Input name={'Email'} value={formState.email} changeHandler={changeHandler('email')} />
+        <Input name={'E-mail:'} value={formState.email} changeHandler={changeHandler('email')} />
         <Input
-          name={'Password'}
+          name={'Пароль:'}
           value={formState.password}
           changeHandler={changeHandler('password')}
           type="password"
@@ -47,10 +49,10 @@ export const AuthForm = () => {
       </div>
 
       {errorMessage !== '' && <div className={style.error}>{errorMessage}</div>}
-
-      <button type="button" onClick={submmitHandler}>
-        AUTH
-      </button>
+      <div className={style.buttonGroop}>
+      <button className={style.buttonInput} type="button" onClick={submmitHandler}><Link to={routes.main}>Вход</Link></button>
+      <button className={style.buttonReg} type="button"><Link to={routes.registr}>Регистрация</Link></button></div>
+      <span><Link to={routes.notFound}>Забыли пароль?</Link></span>
     </div>
   );
 };

@@ -1,17 +1,22 @@
 import { PageWrapper } from "Components/Common/PageWrapper";
 import { Banner } from "Components/Main/banner";
-import { CounterBlock } from "Components/Common/Items";
+import { CounterBlockMain } from "Components/CounterMainMenu";
+import style from './main.module.scss';
 import React from "react";
+import { routes } from "Helpers/Constants/routes";
+import { Link } from "react-router-dom";
+import { WhyChanch } from "Components/Main/chanch";
 /* import { CounterComponent } from "Components/Common/Items"; */
 
 export const Main = () => {
   return (
     <PageWrapper>
       <Banner />
-      <h1> У нас вы можете заказать </h1>
-      <CounterBlock />
-      <h1> Почему клиенты выбирают нас </h1>
-      <h3>Картинка плюс 3 дива с позициями (верстка)</h3>
+      <h1 className={style.text}> У нас вы можете заказать </h1>
+      <h2 className={style.text_min}> от простых конфет в подарочной упаковке до изысканых тортов по индивидуальному заказу</h2>
+      <CounterBlockMain />
+      <div className={style.buttonStyle}><button><Link to={routes.cataloge}>Смотреть все разделы</Link></button></div>
+      <WhyChanch />
     </PageWrapper>
   );
 };

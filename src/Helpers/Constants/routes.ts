@@ -3,5 +3,6 @@ export const routes = {
   cart: '/cart',
   cataloge: '/cataloge',
   auth: '/auth',
+  registr: '/registr',
   notFound: '*',
 };

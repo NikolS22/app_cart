@@ -25,6 +25,7 @@
         "@typescript-eslint/consistent-type-definitions": "off",
         "@typescript-eslint/member-delimiter-style": "off",
         "@typescript-eslint/quotes": "off",
-        "@typescript-eslint/consistent-type-imports": "off"
+        "@typescript-eslint/consistent-type-imports": "off",
+        "multiline-ternary": "off"
     }
 }
